@@ -1,0 +1,24 @@
+body {
+    padding:0;
+    margin:0;
+}
+.container {
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    flex-wrap:wrap;
+    align-items:flex-start
+}
+.one, .two, .three {
+    width:33.333%;
+    height:auto;
+}
+.one {
+    background-color:palevioletred
+}
+.two {
+    background-color:skyblue
+}
+.three {
+    background-color:darkseagreen
+}
