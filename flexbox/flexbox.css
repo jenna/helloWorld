@@ -2,24 +2,49 @@ body {
     padding:0;
     margin:0
 }
-.container {
+.container-row {
     display:flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-direction:row;
-    justify-content:flex-start;
+    justify-content:space-around;
     flex-wrap:wrap;
     align-items:flex-start
 }
 .one, .two, .three {
-    width:46%;
+    width:33.333%;
     height:auto;
-    padding:2%
 }
-.one {
-    background-color:palevioletred
+.one-copy, .two-copy, .three-copy {
+    width:33.333%;
+    font-size:24px;
+    font-family:franklin gothic;
+    color:white;
+    background-color:tomato;
+    text-align:center;
+    padding-bottom: 23px;
+    padding-top: 25px;
+} 
+.container-column {
+    display:flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction:column;
 }
-.two {
-    background-color:skyblue
+@media screen and (max-width:699px) {
+    .one, .two, .three, .one-copy, .two-copy, .three-copy {
+    width:50%;
+    height:auto;
+    }
 }
-.three {
-    background-color:darkseagreen
+
+@media screen and (max-width:499px) {
+    .one, .two, .three, .one-copy, .two-copy, .three-copy {
+    width:100%;
+    height:auto;
+    }
 }
