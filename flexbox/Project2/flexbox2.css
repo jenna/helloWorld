@@ -1,0 +1,77 @@
+/* typography */
+body {
+    font-family:open sans;
+    font-style: condensed;
+    font-size:16px;
+    padding:0;
+    margin:0;
+    color:rgba(37, 37, 37, 1)
+}
+@font-face {
+    font-family:open sans;
+    font-style:condensed;
+    src: url(https://www.google.com/fonts#ChoosePlace:select);
+}
+
+h1, p {
+    font-weight:100;
+    padding-left:10%;
+    padding-right:10%
+}
+
+h1 {
+    text-align:center;
+    text-transform: uppercase;
+    color:#252525;
+    font-size:1.1em
+}
+
+p {
+    text-align: center;
+    font-size:.9em;
+    font-weight:100;
+    line-height: 1.2em;
+    color:rgba(37,37,37,0.3)
+}
+
+li a {
+    text-transform: uppercase;
+    font-size:12px;
+    color:black
+}
+
+li a:hover {
+    color:#ffca62
+} 
+/* layout */
+
+
+#nav {
+    background-color:#ebebed;
+}
+
+
+#nav ul {
+    display:inline-block;
+    list-style-type:none
+}
+
+li {
+    display:inline-block;
+    margin:10px
+}
+
+li:first-of-type {
+    padding:5px;
+    vertical-align:middle;
+}
+
+#intro {
+    max-width:800px;
+    margin:0 auto;
+    padding:30px 5px;
+}
+
+#set-1 {
+    display:flex;
+}
